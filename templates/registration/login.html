@@ -9,30 +9,29 @@
             position: absolute;
             top: 40%;
             left: 40%;
-            height: 250px;
+            height: 25%;
             box-shadow: 1px -3px 4px 5px #ba2121;
             border-radius: 2px 2px 50px 50px;
             background: indigo;
-            width: 400px;
         }
 
-        .sign_in {
-            border: 1px solid white;
+        input  {
+            border: 1px solid red;
             width: 90%;
-            height: 348px;
+            height:20%;
             margin: 10px auto;
             box-shadow: 0px -3px 8px 5px #003366;
             border-radius: 2px 2px 35px 35px;
         }
 
-        {{ form.username }} {
+        form {
             text-align: center;
             display: block;
             box-shadow: 1px -3px 4px 5px #003366;
             border-radius: 2px 2px 35px 35px;
             width: 90%;
             margin: auto;
-            height: 15%;
+            height: 90%;
         }
 
         span {
@@ -50,7 +49,7 @@
             text-align: center;
         }
 
-        .submit {
+        .sub {
             width: 20%;
             text-align: center;
             display: block;
@@ -76,7 +75,7 @@
         {% csrf_token %}
         {{ form.username}}
         {{ form.password }}
-        <input type="submit" value="sub">
+        <input class="sub" type="submit" value="sub">
     </form>
 </div>
 
